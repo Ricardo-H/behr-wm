@@ -1,0 +1,67 @@
+# BehR-WM Training Configuration Template
+# =========================================
+# Copy this file and modify for your experiments
+
+# Model Configuration
+model:
+  world_model: "anonymous/SFT-WM-WebShop-Qwen2.5-7B"
+  reference_agent_model: "Qwen/Qwen3-30B-A3B-Instruct-2507"
+
+# Data Configuration
+data:
+  train_file: "data/train/small.parquet"
+  test_file: "data/test/test.parquet"
+  
+  # Data scales available:
+  # - debug: 1k samples (code debugging)
+  # - tiny: 10k samples (fast experiments)
+  # - small: 50k samples (core experiments)
+  # - medium: 200k samples (scaling verification)
+  # - full: all samples (final training)
+
+# GRPO Training Configuration
+training:
+  # Learning rate
+  learning_rate: 1e-6
+  
+  # Batch size
+  batch_size: 8
+  gradient_accumulation_steps: 4
+  
+  # Epochs
+  num_epochs: 5
+  
+  # Optimization
+  warmup_ratio: 0.1
+  weight_decay: 0.01
+  max_grad_norm: 1.0
+  
+  # GRPO specific
+  grpo_beta: 0.1
+  grpo_clip_ratio: 0.2
+
+# Reward Configuration (BehR-only)
+reward:
+  # Weights (BehR-only: behavior_weight=1.0, facts_weight=0.0)
+  behavior_weight: 1.0
+  facts_weight: 0.0
+  
+  # Behavior consistency
+  reward_mode: "exponential"  # "negative_l1", "negative_l2", "exponential"
+  behavior_scale_coef: 1.0
+  
+  # Format validation
+  format_penalty: -1.0
+
+# Server Configuration
+servers:
+  reference_agent_port: 8000
+  wm_port: 8001
+  env_port_range: [30000, 99999]
+
+# Output Configuration
+output:
+  output_dir: "outputs/grpo"
+  save_steps: 500
+  eval_steps: 500
+  logging_steps: 10

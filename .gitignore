@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+uv_webshop/
+venv/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data (large files)
+*.zip
+*.tar.gz
+*.parquet
+
+# Outputs (generated during evaluation/training)
+outputs/checkpoints/
+outputs/logs/
+
+# Model weights
+models/
+
+# Misc
+*.log
+.wandb/
+wandb/

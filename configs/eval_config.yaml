@@ -1,0 +1,54 @@
+# BehR-WM Evaluation Configuration Template
+# ==========================================
+
+# Model Configuration
+model:
+  world_model: "anonymous/SFT-WM-WebShop-Qwen2.5-7B"
+  agent_model: "gpt-4o-mini-20240718"
+  reference_agent_model: "Qwen/Qwen3-30B-A3B-Instruct-2507"
+
+# Data Configuration
+data:
+  test_file: "data/llama_factory/webshop_test_109.json"
+
+# Evaluation Metrics
+metrics:
+  # Metric 1: Single-step Accuracy
+  single_step_accuracy:
+    enabled: true
+    
+  # Metric 2: Task Success Rate
+  task_success_rate:
+    wm:  # Agent in World Model
+      enabled: true
+      max_steps: 50
+    w2r:  # World Model to Real (Replay)
+      enabled: true
+    real:  # Agent in Real Environment
+      enabled: true
+      max_round: 20
+      
+  # Metric 3: Behavior Consistency
+  behavior_consistency:
+    enabled: true
+    reward_mode: "exponential"
+    behavior_scale_coef: 10.0
+
+# Server Configuration
+servers:
+  wm_port: 8001
+  reference_agent_port: 8000
+  
+# Agent API Configuration
+agent_api:
+  mode: "vllm"  # "openai" or "vllm"
+  # For OpenAI mode:
+  # api_key: "your-api-key"
+  # base_url: "https://api.openai.com/v1"
+  # For vLLM mode:
+  # base_url: "http://localhost:8000/v1"
+
+# Output Configuration
+output:
+  output_dir: "outputs/eval"
+  save_details: true

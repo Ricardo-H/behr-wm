@@ -1,0 +1,67 @@
+# =============================================================================
+# BehR-WM Requirements
+# =============================================================================
+# Tested with Python 3.10, CUDA 12.4
+# 
+# Installation:
+#   bash scripts/env_setup/uv_webshop.sh
+#
+# Note: For GRPO training, also run: bash scripts/env_setup/install_verl.sh
+# =============================================================================
+
+# Core ML
+torch==2.6.0
+transformers>=4.50.0
+accelerate>=1.0.0
+
+# vLLM for inference
+vllm==0.8.5
+
+# Flash Attention (install separately with --no-build-isolation)
+# pip install flash-attn==2.7.4.post1 --no-build-isolation
+flash_attn==2.7.4.post1
+
+# OpenAI API client
+openai==2.16.0
+
+# Data processing
+pandas==3.0.0
+pyarrow==23.0.0
+datasets==4.5.0
+
+# Training
+ray==2.53.0
+wandb==0.24.0
+peft==0.18.1
+
+# Evaluation & utilities
+tqdm==4.67.1
+requests==2.32.5
+aiohttp==3.13.3
+matplotlib
+
+# HTTP server
+httpx==0.28.1
+python-multipart>=0.0.7
+uvicorn>=0.30.0
+
+# =============================================================================
+# Installation Notes:
+# =============================================================================
+# 
+# 1. Install PyTorch first (match your CUDA version):
+#    pip install torch==2.8.0 torchvision==0.23.0 torchaudio==2.8.0 --index-url https://download.pytorch.org/whl/cu128
+#
+# 2. Install Flash Attention separately:
+#    pip install flash-attn==2.8.1 --no-build-isolation
+#
+# 3. Install vLLM:
+#    pip install vllm==0.11.0
+#
+# 4. Install verl for GRPO training:
+#    git clone https://github.com/verl-project/verl.git
+#    cd verl && pip install -e . --no-deps
+#
+# 5. Install WebShop environment:
+#    bash scripts/env_setup/uv_webshop.sh
+# =============================================================================
