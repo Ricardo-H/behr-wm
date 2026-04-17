@@ -47,7 +47,7 @@ def _download(envs: list[str], splits: list[str]) -> int:
     if HF_REPO_ID is None:
         print(
             "[behr-wm] Init contexts are not yet published on HuggingFace Hub.\n"
-            "         Milestone v0.4 will publish them at: Ricardo-H/behr-wm-data (TBA).\n"
+            "         Datasets and model checkpoints are coming soon (see README).\n"
             "         Track progress: https://github.com/Ricardo-H/behr-wm#release-timeline\n"
             "         If you need the data today, please open a GitHub issue.",
             file=sys.stderr,

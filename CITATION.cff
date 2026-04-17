@@ -12,16 +12,15 @@ abstract: >-
   TextWorld while preserving or improving single-step prediction quality, and
   reduces false positives in offline surrogate evaluation.
 authors:
-  - family-names: "Guan"
-    given-names: "Yiming"
+  - alias: "Ricardo-H"
 repository-code: "https://github.com/Ricardo-H/behr-wm"
 license: Apache-2.0
 type: software
 preferred-citation:
   type: article
-  title: "BehR-WM: Behavior Consistency Reward for Text-Based World Models"
+  title: "Beyond State Consistency: Behavior Consistency in Text-Based World Models"
   authors:
-    - family-names: "Guan"
-      given-names: "Yiming"
+    - alias: "Ricardo-H"
   year: 2026
-  notes: "Preprint; full citation will be updated once the paper is public."
+  url: "https://arxiv.org/abs/2604.13824"
+  notes: "arXiv:2604.13824"

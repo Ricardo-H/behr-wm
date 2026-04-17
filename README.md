@@ -2,10 +2,10 @@
 
 <div align="center">
 
+[![Paper](https://img.shields.io/badge/arXiv-2604.13824-b31b1b.svg)](https://arxiv.org/abs/2604.13824)
 [![License](https://img.shields.io/badge/License-Apache%202.0-green.svg)](LICENSE)
-[![Paper](https://img.shields.io/badge/Paper-arXiv-red.svg)](#citation)
-[![Models](https://img.shields.io/badge/Models-TBA-yellow.svg)](#release-timeline)
-[![Dataset](https://img.shields.io/badge/Dataset-TBA-yellow.svg)](#release-timeline)
+[![Models](https://img.shields.io/badge/Models-coming%20soon-yellow.svg)](#release-timeline)
+[![Dataset](https://img.shields.io/badge/Dataset-coming%20soon-yellow.svg)](#release-timeline)
 
 </div>
 
@@ -54,18 +54,15 @@ functional equivalence.
 
 ## Release Timeline
 
-This repository follows an incremental open-source release. Check back for updates.
+This repository is released alongside the paper. Additional artifacts will
+follow:
 
-| Milestone | Content | Status |
-|-----------|---------|--------|
-| **v0.1 — 2026-03** | Initial eval/train skeleton, configs, docs | ✅ Released |
-| **v0.2 — 2026-04** | BehR reward code (WebShop + TextWorld), full 3-stage evaluation pipeline, `compute_cr.py`, training config documentation | ✅ Released |
-| **v0.3 — TBA** | Trained world-model checkpoints on HuggingFace (Qwen2.5-7B, Llama-3.1-8B, Ministral-3B) | 🔜 Planned |
-| **v0.4 — TBA** | Training & evaluation datasets (trajectories + init contexts) on HuggingFace Hub | 🔜 Planned |
-| **v0.5 — TBA** | Lookahead-planning inference extension, cross-judge evaluation artifacts | 🔜 Planned |
+- ✅ **Code** — evaluation pipeline, BehR reward, verl training script.
+- 🔜 **Model checkpoints** — trained BehR world models (coming soon).
+- 🔜 **Datasets** — training trajectories and init contexts (coming soon).
 
-Artifact links will be added here and under [`data/README.md`](data/README.md) as
-each milestone ships.
+Artifact links will be posted here and under
+[`data/README.md`](data/README.md) once released.
 
 ## Repository Layout
 
@@ -146,49 +143,51 @@ Full details and TextWorld variants live in [docs/EVALUATION.md](docs/EVALUATION
 
 ## Training
 
-We do **not** ship training launch scripts (paths & cluster-specific arguments
-differ across setups). Instead, we document the verl GRPO configuration used to
-produce the paper numbers, and provide the reward code so you can plug BehR into
-your own launch command.
+A minimal training launcher is provided at
+[`train/run_grpo_4gpu.sh`](train/run_grpo_4gpu.sh) (4× A100-80GB default). It
+wires our BehR reward into the [verl](https://github.com/volcengine/verl) GRPO
+trainer. The full list of hyper-parameters and the 8-GPU / TextWorld variants
+are documented in [docs/TRAINING.md](docs/TRAINING.md).
+
+```bash
+# 1. Start the Reference Agent (judge) server
+bash scripts/servers/start_reference_agent_server.sh -m Qwen/Qwen3-8B -p 8000 -gpu 0,1,2,3 --shared
+
+# 2. Launch GRPO training (edit TRAIN_DATA / VAL_DATA / WORLD_MODEL inside the script)
+bash train/run_grpo_4gpu.sh
+```
 
 ### Reward plug-in
 
-Point verl's `custom_reward_function` at one of:
+verl's `custom_reward_function` points at one of:
 
 - [`src/reward/behr_reward_webshop.py`](src/reward/behr_reward_webshop.py) —
   BehR + physical-facts reward for WebShop
 - [`src/reward/behr_reward_textworld.py`](src/reward/behr_reward_textworld.py) —
   pure BehR for TextWorld
 
-Both expose `compute_score(data_source, solution_str, ground_truth, extra_info)`
-matching the verl reward-manager signature.
+Both expose `compute_score(data_source, solution_str, ground_truth, extra_info)`.
 
-### Key training hyper-parameters (GRPO, verl)
+### Key training hyper-parameters (GRPO, verl, 4× A100)
 
 | Group | Parameter | Value |
 |-------|-----------|-------|
 | Algorithm | `algorithm.adv_estimator` | `grpo` |
-| Algorithm | `actor_rollout_ref.rollout.n` | `8` (group size) |
 | Algorithm | KL loss coefficient | `0.001` |
-| Data | `data.train_batch_size` | `128` |
-| Data | `data.max_prompt_length` | `8192` |
+| Data | `data.train_batch_size` | `32` |
+| Data | `data.max_prompt_length` | `14336` |
 | Data | `data.max_response_length` | `1024` |
-| Optim | learning rate (actor) | `1e-6` |
-| Optim | warmup ratio | `0.0` |
-| Rollout | `actor_rollout_ref.rollout.temperature` | `1.0` |
-| Rollout | `actor_rollout_ref.rollout.top_p` | `1.0` |
-| Reward | `reward_model.reward_manager` | `batch` |
-| Reward | `custom_reward_function.path` | `src/reward/behr_reward_webshop.py` |
-| Reward | `custom_reward_function.name` | `compute_score` |
+| Optim | learning rate (actor) | `5e-6` |
+| Rollout | `tensor_model_parallel_size` | `2` |
+| Rollout | `n` (group size) | `5` |
+| Rollout | `temperature` / `top_p` | `1.3` / `1.0` |
+| Reward | reward mode | `cauchy` (recommended) |
 | Reward | `behavior_weight` / `facts_weight` | `0.8` / `0.2` (WebShop) |
 | Reward | `behavior_scale_coef` ($\alpha$) | `1.0` |
-| Reward | reward mode | `cauchy` (recommended) |
-| Hardware | world size | 4×A100-80GB or 8×A100-80GB |
+| Hardware | world size | 4× A100-80GB |
 
-A ready-to-edit template lives at
-[`configs/train_config.yaml`](configs/train_config.yaml); the end-to-end walk-through
-(reference-agent server, data registration, judge-model choice) is in
-[docs/TRAINING.md](docs/TRAINING.md).
+A ready-to-edit config template also lives at
+[`configs/train_config.yaml`](configs/train_config.yaml).
 
 ## The BehR Reward
 
@@ -237,9 +236,17 @@ served from HuggingFace Hub via `scripts/download_data.py`. Links appear under
 
 ## Citation
 
-The paper is currently under review. A citation entry will be added here once
-the preprint is public. A provisional BibTeX key lives in
-[`CITATION.cff`](CITATION.cff).
+```bibtex
+@article{huang2026behrwm,
+  title   = {Beyond State Consistency: Behavior Consistency in Text-Based World Models},
+  author  = {Huang, Youling and Chen, Guanqiao and Yao, Junchi and Wang, Lu and
+             Yang, Fangkai and Du, Chao and Zhao, ChenZhuo and Zhao, Pu and
+             Lin, Qingwei and Rajmohan, Saravan and Zhang, Dongmei},
+  journal = {arXiv preprint arXiv:2604.13824},
+  year    = {2026},
+  url     = {https://arxiv.org/abs/2604.13824}
+}
+```
 
 ## License
 

@@ -24,10 +24,11 @@ python scripts/download_data.py --env webshop   # only WebShop
 python scripts/download_data.py --env textworld --split test
 ```
 
-> **Status:** the HuggingFace repository ID is reserved and will be published as
-> part of milestone **v0.4** (see [Release Timeline](../README.md#release-timeline)).
-> Until then `download_data.py` prints the upcoming repo ID and exits. If you
-> need the init contexts today, request them by opening a GitHub issue.
+> **Status:** the HuggingFace repository ID is reserved and will be published
+> together with the datasets and trained checkpoints (coming soon — see the
+> [Release Timeline](../README.md#release-timeline)). Until then
+> `download_data.py` prints the upcoming repo ID and exits. If you need the
+> init contexts today, request them by opening a GitHub issue.
 
 After a successful download the directory layout is:
 
@@ -48,14 +49,13 @@ data/init_contexts/
 ## Training data
 
 Full training trajectories (parquet, GRPO-ready) will ship under the same
-HuggingFace repository in milestone **v0.4**. They follow the schema expected
-by [`src/data/prepare_data.py`](../src/data/prepare_data.py) and can be consumed
+HuggingFace repository (coming soon). They follow the schema expected by
+[`src/data/prepare_data.py`](../src/data/prepare_data.py) and can be consumed
 directly by the reference verl invocation in
 [`docs/TRAINING.md`](../docs/TRAINING.md).
 
 ## Model checkpoints
 
-Trained world-model checkpoints will be published on HuggingFace under
-`Ricardo-H/behr-wm-*` as part of milestone **v0.3**. Each checkpoint card will
-document the base world model, training data slice, and the reported
-CR / CR<sub>pw</sub> / EM numbers.
+Trained world-model checkpoints will be published on HuggingFace (coming soon).
+Each checkpoint card will document the base world model, training data slice,
+and the reported CR / CR<sub>pw</sub> / EM numbers.
