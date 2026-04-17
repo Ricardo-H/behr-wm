@@ -1,17 +1,18 @@
 #!/usr/bin/env python3
-"""
-BehR-WM Package Setup
-"""
+"""BehR-WM package setup."""
 
-from setuptools import setup, find_packages
+from setuptools import find_packages, setup
 
 setup(
     name="behr-wm",
-    version="0.1.0",
-    description="Beyond State Consistency: Behavior Consistency in Text-Based World Models",
-    author="Anonymous",
-    author_email="",
-    url="https://anonymous.4open.science/r/behr-wm-787B",
+    version="0.2.0",
+    description=(
+        "BehR-WM: Behavior Consistency Reward for text-based world models."
+    ),
+    long_description=open("README.md", encoding="utf-8").read(),
+    long_description_content_type="text/markdown",
+    url="https://github.com/Ricardo-H/behr-wm",
+    license="Apache-2.0",
     packages=find_packages(where="src"),
     package_dir={"": "src"},
     python_requires=">=3.10",
@@ -19,6 +20,7 @@ setup(
         "torch>=2.0.0",
         "transformers>=4.40.0",
         "openai>=1.0.0",
+        "huggingface_hub>=0.24.0",
         "requests",
         "tqdm",
         "pandas",
@@ -28,6 +30,9 @@ setup(
         "train": [
             "vllm>=0.6.0",
             "datasets",
+            "ray>=2.30.0",
+            "wandb",
+            "peft",
         ],
         "eval": [
             "matplotlib",
@@ -35,7 +40,7 @@ setup(
         ],
     },
     classifiers=[
-        "Development Status :: 3 - Alpha",
+        "Development Status :: 4 - Beta",
         "Intended Audience :: Science/Research",
         "License :: OSI Approved :: Apache Software License",
         "Programming Language :: Python :: 3",

@@ -1,18 +1,18 @@
 #!/usr/bin/env python3
 """
-Behavior Consistency Evaluation for World Models
+Behavioral Fidelity Evaluation for World Models
 
 =============================================================================
 核心思想
 =============================================================================
-使用 Behavior Consistency Reward 作为独立评估指标，测试 World Model 在测试集上
+使用 Behavioral Fidelity Reward 作为独立评估指标，测试 World Model 在测试集上
 与真实环境的单步动作一致性。
 
 评估流程：
 1. 加载测试集（多轮对话格式）
 2. 对于每个 step：
    - 使用历史 context + action 让 WM 生成预测状态
-   - 使用裁判模型计算 Behavior Consistency：
+   - 使用裁判模型计算 Behavioral Fidelity：
      * log π(next_action | WM_predicted_state)  vs 
      * log π(next_action | real_state)
    - 差异越小，说明 WM 越能让 Agent 做出与真实环境一致的决策
@@ -23,10 +23,10 @@ Behavior Consistency Evaluation for World Models
 1. 启动裁判模型 vLLM 服务（端口 8001）
 2. 启动待评估的 World Model vLLM 服务（端口 8000）
 3. 运行评估：
-   python eval_behavior_consistency.py \
+   python eval_behavioral_fidelity.py \
        --test-file /path/to/webshop_test_109.json \
        --wm-port 8000 \
-       --ref-agent-port 8001 \
+       --judge-port 8001 \
        --output-dir ./eval_results
 """
 
@@ -48,7 +48,7 @@ sys.path.insert(0, PROJECT_ROOT)
 # 导入奖励函数组件
 from src.reward.pivot_reward import (
     PivotGRPOConfig,
-    HTTPReferenceAgent,
+    HTTPJudgeAgent,
     FormatValidator,
     _compute_facts_reward,
     _compute_similarity_score,
@@ -71,8 +71,8 @@ class EvalConfig:
     wm_temperature: float = 0.0
     
     # 裁判模型服务
-    reference_agent_port: int = 8001
-    reference_agent_model_path: str = "Qwen/Qwen3-30B-A3B-Instruct-2507"
+    judge_port: int = 8001
+    judge_model_path: str = "Qwen/Qwen3-30B-A3B-Instruct-2507"
     
     # 评估参数
     reward_mode: str = "exponential"  # 奖励模式: "negative_l1", "negative_l2", "exponential"
@@ -158,7 +158,7 @@ class WorldModelClient:
 # 评估器
 # =============================================================================
 class BehavioralFidelityEvaluator:
-    """行为一致性评估器"""
+    """行为保真度评估器"""
     
     def __init__(self, config: EvalConfig):
         self.config = config
@@ -173,14 +173,14 @@ class BehavioralFidelityEvaluator:
         )
         
         # 初始化裁判模型
-        reference_agent_config = PivotGRPOConfig(
+        judge_config = PivotGRPOConfig(
             reward_mode=config.reward_mode,
             behavior_scale_coef=config.behavior_scale_coef,
-            reference_agent_model_path=config.reference_agent_model_path,
-            reference_agent_api_url=f"http://localhost:{config.reference_agent_port}",
+            judge_model_path=config.judge_model_path,
+            judge_api_url=f"http://localhost:{config.judge_port}",
             api_timeout=config.api_timeout,
         )
-        self.ref_agent = HTTPReferenceAgent(reference_agent_config)
+        self.judge = HTTPJudgeAgent(judge_config)
         self.reward_mode = config.reward_mode
         self.behavior_scale_coef = config.behavior_scale_coef
         self.validator = FormatValidator()
@@ -204,7 +204,7 @@ class BehavioralFidelityEvaluator:
         - context: 历史对话（用于 WM 生成）
         - action: 当前动作（user 输入到 WM）
         - real_state: 真实状态（assistant 响应）
-        - next_action: 下一个动作（用于计算 behavior consistency）
+        - next_action: 下一个动作（用于计算 behavioral fidelity）
         """
         messages = sample.get("messages", [])
         steps = []
@@ -224,7 +224,7 @@ class BehavioralFidelityEvaluator:
                 action = messages[i]["content"]  # 当前动作
                 real_state = messages[i+1]["content"]  # 真实状态
                 
-                # 检查是否有下一个动作（用于计算 behavior consistency）
+                # 检查是否有下一个动作（用于计算 behavioral fidelity）
                 if i + 2 < len(messages) and messages[i+2]["role"] == "user":
                     next_action = messages[i+2]["content"]
                     
@@ -256,7 +256,7 @@ class BehavioralFidelityEvaluator:
         next_action: str,
     ) -> Dict[str, Any]:
         """
-        评估单个步骤的行为一致性
+        评估单个步骤的行为保真度
         
         Returns:
             包含评估结果的字典
@@ -294,8 +294,8 @@ class BehavioralFidelityEvaluator:
                 result["error"] = f"Format invalid: {reason}"
                 return result
             
-            # 3. 计算 Behavior Consistency
-            fidelity_result = self.ref_agent.compute_behavior_consistency_reward(
+            # 3. 计算 Behavioral Fidelity
+            fidelity_result = self.judge.compute_behavioral_fidelity_reward(
                 predicted_state=predicted_state,
                 real_state=real_state,
                 expert_action=next_action,
@@ -389,8 +389,8 @@ class BehavioralFidelityEvaluator:
         # 初始化服务
         print("[Eval] Initializing WM client...")
         self.wm_client.initialize()
-        print("[Eval] Initializing Reference Agent model...")
-        self.ref_agent.initialize()
+        print("[Eval] Initializing Judge model...")
+        self.judge.initialize()
         
         # 统计
         all_results = [None] * len(test_data)  # 预分配保持顺序
@@ -437,7 +437,7 @@ class BehavioralFidelityEvaluator:
             "config": {
                 "test_file": self.config.test_file,
                 "wm_port": self.config.wm_port,
-                "reference_agent_port": self.config.reference_agent_port,
+                "judge_port": self.config.judge_port,
                 "reward_mode": self.config.reward_mode,
                 "behavior_scale_coef": self.config.behavior_scale_coef,
                 "num_samples": len(test_data),
@@ -479,7 +479,7 @@ class BehavioralFidelityEvaluator:
         
         # 打印摘要
         print("\n" + "=" * 60)
-        print("Behavior Consistency Evaluation Summary")
+        print("Behavioral Fidelity Evaluation Summary")
         print("=" * 60)
         print(f"Total samples: {len(test_data)}")
         print(f"Total steps: {total_steps}")
@@ -489,7 +489,7 @@ class BehavioralFidelityEvaluator:
             mode_info = f"{self.config.reward_mode} mode"
             if self.config.reward_mode == "exponential":
                 mode_info += f", coef={self.config.behavior_scale_coef}"
-            print(f"\nBehavior Consistency ({mode_info}, higher is better):")
+            print(f"\nBehavioral Fidelity ({mode_info}, higher is better):")
             print(f"  Mean: {summary['metrics']['avg_behavior_reward']:.4f}")
             print(f"  Std:  {summary['metrics']['std_behavior_reward']:.4f}")
             print(f"  Min:  {summary['metrics']['min_behavior_reward']:.4f}")
@@ -524,8 +524,9 @@ def main():
     parser.add_argument(
         "--test-file",
         type=str,
-        default="data/llama_factory/webshop_test_109.json",
-        help="Path to test data file",
+        default=None,
+        required=True,
+        help="Path to test data file (see docs/EVALUATION.md).",
     )
     
     # World Model 服务
@@ -535,12 +536,12 @@ def main():
     parser.add_argument("--wm-temperature", type=float, default=0.0, help="WM generation temperature")
     
     # 裁判模型服务
-    parser.add_argument("--ref-agent-port", type=int, default=8001, help="Reference Agent vLLM server port")
+    parser.add_argument("--judge-port", type=int, default=8001, help="Judge vLLM server port")
     parser.add_argument(
-        "--ref-agent-model-path",
+        "--judge-model-path",
         type=str,
         default="Qwen/Qwen3-30B-A3B-Instruct-2507",
-        help="Reference Agent model path (for tokenizer)",
+        help="Judge model path (for tokenizer)",
     )
     
     # 评估参数
@@ -565,8 +566,8 @@ def main():
         wm_model_name=args.wm_model_name,
         wm_max_tokens=args.wm_max_tokens,
         wm_temperature=args.wm_temperature,
-        reference_agent_port=args.reference_agent_port,
-        reference_agent_model_path=args.reference_agent_model_path,
+        judge_port=args.judge_port,
+        judge_model_path=args.judge_model_path,
         reward_mode=args.reward_mode,
         behavior_scale_coef=args.behavior_scale_coef,
         max_samples=args.max_samples,

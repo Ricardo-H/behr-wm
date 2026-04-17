@@ -3,13 +3,15 @@
 
 # Model Configuration
 model:
-  world_model: "anonymous/SFT-WM-WebShop-Qwen2.5-7B"
+  # Set to any local path or HuggingFace ID of a trained BehR world model.
+  world_model: "X1AOX1A/WorldModel-Webshop-Llama3.1-8B"
   agent_model: "gpt-4o-mini-20240718"
-  reference_agent_model: "Qwen/Qwen3-30B-A3B-Instruct-2507"
+  reference_agent_model: "Qwen/Qwen3-8B"
 
 # Data Configuration
 data:
-  test_file: "data/llama_factory/webshop_test_109.json"
+  # Will be fetched by scripts/download_data.py once v0.4 ships.
+  test_file: "data/init_contexts/webshop/agent_instruct_test.json"
 
 # Evaluation Metrics
 metrics:

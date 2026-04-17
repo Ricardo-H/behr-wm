@@ -1,67 +1,68 @@
 # =============================================================================
 # BehR-WM Requirements
 # =============================================================================
-# Tested with Python 3.10, CUDA 12.4
-# 
-# Installation:
-#   bash scripts/env_setup/uv_webshop.sh
+# Tested with Python 3.10 and CUDA 12.4.
 #
-# Note: For GRPO training, also run: bash scripts/env_setup/install_verl.sh
+# Quick install (evaluation environment):
+#     bash scripts/env_setup/uv_webshop.sh
+#
+# Additional step for GRPO training:
+#     bash scripts/env_setup/install_verl.sh
 # =============================================================================
 
-# Core ML
+# --- Core ML ---
 torch==2.6.0
 transformers>=4.50.0
 accelerate>=1.0.0
 
-# vLLM for inference
+# --- vLLM (high-throughput inference for WM / reference agent) ---
 vllm==0.8.5
 
-# Flash Attention (install separately with --no-build-isolation)
-# pip install flash-attn==2.7.4.post1 --no-build-isolation
+# Flash Attention must be installed without build isolation:
+#     pip install flash-attn==2.7.4.post1 --no-build-isolation
 flash_attn==2.7.4.post1
 
-# OpenAI API client
+# --- API clients ---
 openai==2.16.0
+huggingface_hub>=0.24.0
 
-# Data processing
+# --- Data processing ---
 pandas==3.0.0
 pyarrow==23.0.0
 datasets==4.5.0
 
-# Training
+# --- Training (verl / ray / logging) ---
 ray==2.53.0
 wandb==0.24.0
 peft==0.18.1
 
-# Evaluation & utilities
+# --- Evaluation & utilities ---
 tqdm==4.67.1
 requests==2.32.5
 aiohttp==3.13.3
 matplotlib
 
-# HTTP server
+# --- HTTP server (reference-agent & WM wrappers) ---
 httpx==0.28.1
 python-multipart>=0.0.7
 uvicorn>=0.30.0
 
 # =============================================================================
-# Installation Notes:
+# Step-by-step installation notes
 # =============================================================================
-# 
-# 1. Install PyTorch first (match your CUDA version):
-#    pip install torch==2.8.0 torchvision==0.23.0 torchaudio==2.8.0 --index-url https://download.pytorch.org/whl/cu128
 #
-# 2. Install Flash Attention separately:
-#    pip install flash-attn==2.8.1 --no-build-isolation
+# 1. Install PyTorch first, matching your CUDA version:
+#        pip install torch==2.6.0 --index-url https://download.pytorch.org/whl/cu124
+#
+# 2. Install Flash Attention (no build isolation):
+#        pip install flash-attn==2.7.4.post1 --no-build-isolation
 #
 # 3. Install vLLM:
-#    pip install vllm==0.11.0
+#        pip install vllm==0.8.5
 #
 # 4. Install verl for GRPO training:
-#    git clone https://github.com/verl-project/verl.git
-#    cd verl && pip install -e . --no-deps
+#        bash scripts/env_setup/install_verl.sh
 #
-# 5. Install WebShop environment:
-#    bash scripts/env_setup/uv_webshop.sh
+# 5. Install the WebShop environment:
+#        bash scripts/env_setup/uv_webshop.sh
 # =============================================================================

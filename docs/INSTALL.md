@@ -9,7 +9,7 @@
 ## Step 1: Clone Repository
 
 ```bash
-git clone https://anonymous.4open.science/r/behr-wm-787B
+git clone https://github.com/Ricardo-H/behr-wm.git
 cd behr-wm
 ```
 

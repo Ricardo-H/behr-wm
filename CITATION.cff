@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use BehR-WM in academic work, please cite the accompanying paper."
+title: "BehR-WM: Behavior Consistency Reward for Text-Based World Models"
+abstract: >-
+  BehR-WM reframes world-model training for text-based interactive
+  environments around functional equivalence with the real environment. Instead
+  of maximizing Exact Match between predicted and real states, we optimize a
+  tractable step-level proxy — the Behavior Consistency Reward (BehR) — which
+  measures how much a frozen Reference Agent's likelihood of the logged next
+  action shifts between the real state and the world-model-predicted state.
+  Training with BehR improves task-level Consistency Ratio (CR) on WebShop and
+  TextWorld while preserving or improving single-step prediction quality, and
+  reduces false positives in offline surrogate evaluation.
+authors:
+  - family-names: "Guan"
+    given-names: "Yiming"
+repository-code: "https://github.com/Ricardo-H/behr-wm"
+license: Apache-2.0
+type: software
+preferred-citation:
+  type: article
+  title: "BehR-WM: Behavior Consistency Reward for Text-Based World Models"
+  authors:
+    - family-names: "Guan"
+      given-names: "Yiming"
+  year: 2026
+  notes: "Preprint; full citation will be updated once the paper is public."

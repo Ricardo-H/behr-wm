@@ -54,8 +54,21 @@ python eval/02_task_success_rate/analyze_pairwise_cr.py \
     --real-dir outputs/task_success_rate/real/webshop/<experiment> \
     --w2r-dir outputs/task_success_rate/w2r/webshop/<experiment>
 
+# (alternative aggregate helper across many experiments)
+python compute_cr.py --results-dir outputs/task_success_rate/
+
 # Metric 3: Behavior Consistency
 bash eval/03_behavior_consistency/run_eval_bf.sh
+```
+
+## TextWorld
+
+All three metrics also apply to TextWorld. The `lookahead` variants of the
+Metric 2 scripts run the agent with inference-time world-model simulation:
+
+```bash
+bash eval/02_task_success_rate/run_lookahead_textworld.sh
+bash eval/02_task_success_rate/run_lookahead_full.sh         # WebShop equivalent
 ```
 
 ## Detailed Metrics

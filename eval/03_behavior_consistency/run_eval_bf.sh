@@ -1,67 +1,65 @@
 #!/bin/bash
 # =============================================================================
-# Behavior Consistency Evaluation Script
+# Behavior Consistency Evaluation Script (Metric 3)
 # =============================================================================
-# 
-# 使用方法:
-# 1. 先启动裁判模型 vLLM 服务 (端口 8000):
-#    bash scripts/servers/start_reference_agent_server.sh
 #
-# 2. 启动世界模型 vLLM 服务 (端口 8001):
-#    bash scripts/servers/start_wm_server.sh
-# 
-# 3. 运行评估:
-#    bash run_eval_bf.sh
+# Usage:
+#   1. Start the Reference Agent (judge) vLLM server (port 8000):
+#        bash scripts/servers/start_reference_agent_server.sh -m Qwen/Qwen3-8B -p 8000 -gpu 0
+#
+#   2. Start the World Model vLLM server (port 8001):
+#        bash scripts/servers/start_wm_server.sh -m <wm_model_path> -p 8001 -gpu 1
+#
+#   3. Run evaluation:
+#        bash eval/03_behavior_consistency/run_eval_bf.sh <path_to_test.json>
 # =============================================================================
 
 set -e
 
-# Get script directory
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 PROJECT_ROOT="$( cd "$SCRIPT_DIR/../.." && pwd )"
 cd "$SCRIPT_DIR"
 
-# Activate environment
 if [ -f "$PROJECT_ROOT/uv_webshop/bin/activate" ]; then
     source "$PROJECT_ROOT/uv_webshop/bin/activate"
 fi
 
 # === Configuration ===
-TEST_FILE="$PROJECT_ROOT/data/llama_factory/webshop_test_109.json"
-WM_PORT=8001
-REF_AGENT_PORT=8000
-OUTPUT_DIR="./eval_results/$(date +%Y-%m-%d_%H-%M-%S)"
-MAX_SAMPLES=-1  # -1 for all
-MAX_STEPS=-1    # -1 for all
+TEST_FILE="${1:-}"
+WM_PORT="${WM_PORT:-8001}"
+JUDGE_PORT="${JUDGE_PORT:-8000}"
+OUTPUT_DIR="${OUTPUT_DIR:-./eval_results/$(date +%Y-%m-%d_%H-%M-%S)}"
+MAX_SAMPLES="${MAX_SAMPLES:--1}"
+MAX_STEPS="${MAX_STEPS:--1}"
 
-# Check test file exists
-if [ ! -f "$TEST_FILE" ]; then
-    echo "Error: Test file not found: $TEST_FILE"
-    echo "Please run 'python scripts/download_data.py' first."
+if [ -z "$TEST_FILE" ] || [ ! -f "$TEST_FILE" ]; then
+    echo "Usage: bash run_eval_bf.sh <path_to_test_file.json>"
+    echo ""
+    echo "The test file is a JSON list of logged trajectories. See docs/EVALUATION.md"
+    echo "for the schema; obtain the standard test split with:"
+    echo "    python scripts/download_data.py"
     exit 1
 fi
 
-# === Run Evaluation ===
 echo "=========================================="
-echo "Behavior Consistency Evaluation"
+echo "Behavior Consistency Evaluation (Metric 3)"
 echo "=========================================="
 echo "Test File:  $TEST_FILE"
 echo "WM Port:    $WM_PORT"
-echo "Reference Agent Port: $REF_AGENT_PORT"
+echo "Judge Port: $JUDGE_PORT"
 echo "Output Dir: $OUTPUT_DIR"
 echo "=========================================="
 
 python eval_behavior_consistency.py \
     --test-file "$TEST_FILE" \
-    --wm-port $WM_PORT \
-    --ref-agent-port $REF_AGENT_PORT \
+    --wm-port "$WM_PORT" \
+    --judge-port "$JUDGE_PORT" \
     --output-dir "$OUTPUT_DIR" \
-    --max-samples $MAX_SAMPLES \
-    --max-steps-per-sample $MAX_STEPS \
+    --max-samples "$MAX_SAMPLES" \
+    --max-steps "$MAX_STEPS" \
     --reward-mode exponential \
     --behavior-scale-coef 10.0
 
 echo "=========================================="
-echo "Evaluation Complete!"
-echo "Results saved to: $OUTPUT_DIR"
+echo "Evaluation complete. Results: $OUTPUT_DIR"
 echo "=========================================="

@@ -2,33 +2,60 @@
 
 ## Overview
 
-This project uses interaction trajectories from the following environments:
+BehR-WM draws on two text-based interactive environments:
 
-- **WebShop** ([Yao et al., 2022](https://arxiv.org/abs/2207.01206)): E-commerce web navigation with 1.18M real-world products
-- **TextWorld** ([Côté et al., 2019](https://arxiv.org/abs/1806.11532)): Text-based game environment with procedurally generated games
+- **WebShop** ([Yao et al., 2022](https://arxiv.org/abs/2207.01206)) —
+  e-commerce web navigation over 1.18M real-world products.
+- **TextWorld** ([Côté et al., 2019](https://arxiv.org/abs/1806.11532)) —
+  procedurally generated text adventure games.
 
-## Evaluation Data
+Evaluation uses **200 standardized test tasks** per environment, taken from
+[AgentGym](https://github.com/WooooDyy/AgentGym).
 
-Evaluation uses **200 standardized test tasks** from [AgentEnv](https://github.com/WooooDyy/AgentGym) for each environment. The test tasks are included in `data/eval/`.
+## How to obtain the init contexts
 
-## System Prompts
+The evaluation and training pipelines read per-environment system prompts
+(agent + world model, train/test splits) from `data/init_contexts/`. Rather
+than vendoring the JSON into this repo, we fetch them from HuggingFace Hub:
 
-The `data/init_contexts/` directory contains system prompts for agents and world models:
+```bash
+python scripts/download_data.py                 # default: all envs, all splits
+python scripts/download_data.py --env webshop   # only WebShop
+python scripts/download_data.py --env textworld --split test
+```
+
+> **Status:** the HuggingFace repository ID is reserved and will be published as
+> part of milestone **v0.4** (see [Release Timeline](../README.md#release-timeline)).
+> Until then `download_data.py` prints the upcoming repo ID and exits. If you
+> need the init contexts today, request them by opening a GitHub issue.
+
+After a successful download the directory layout is:
 
 ```
 data/init_contexts/
 ├── webshop/
-│   ├── agent_instruct_test.json    # Agent system prompt (test)
-│   ├── wm_instruct_test.json       # World model system prompt (test)
-│   ├── agent_instruct_train.json   # Agent system prompt (train)
-│   └── wm_instruct_train.json      # World model system prompt (train)
+│   ├── agent_instruct_train.json
+│   ├── agent_instruct_test.json
+│   ├── wm_instruct_train.json
+│   └── wm_instruct_test.json
 └── textworld/
-    ├── agent_instruct_test.json
-    ├── wm_instruct_test.json
     ├── agent_instruct_train.json
-    └── wm_instruct_train.json
+    ├── agent_instruct_test.json
+    ├── wm_instruct_train.json
+    └── wm_instruct_test.json
 ```
 
-## Training Data
+## Training data
 
-Training data, model weights, and full evaluation datasets will be released upon paper acceptance.
+Full training trajectories (parquet, GRPO-ready) will ship under the same
+HuggingFace repository in milestone **v0.4**. They follow the schema expected
+by [`src/data/prepare_data.py`](../src/data/prepare_data.py) and can be consumed
+directly by the reference verl invocation in
+[`docs/TRAINING.md`](../docs/TRAINING.md).
+
+## Model checkpoints
+
+Trained world-model checkpoints will be published on HuggingFace under
+`Ricardo-H/behr-wm-*` as part of milestone **v0.3**. Each checkpoint card will
+document the base world model, training data slice, and the reported
+CR / CR<sub>pw</sub> / EM numbers.
