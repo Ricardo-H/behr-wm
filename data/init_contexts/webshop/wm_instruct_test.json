@@ -1,0 +1,1802 @@
+[
+    {
+        "id": 5238,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me heavy duty power protection for wireless charging with color: white, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 912,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me wash cold, machine wash men's shirts with polyester heathers, heathers cotton, cotton heather, needle sleeve, classic fit with color: kelly green, and fit type: men, and size: small, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 204,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me wash cold, machine wash men's shirts with polyester heathers, heathers cotton, cotton heather, needle sleeve, classic fit with color: royal blue, and fit type: men, and size: medium, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 6074,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me slip resistant, non slip men's loafers & slip-ons with rubber outsole, rubber sole with color: r.brown2626, and size: 11, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 2253,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me slim fit men's suits & sport coats with button closure, classic fit with color: fuchsia, and size: small, and price lower than 90.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 2006,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me machine wash men's t-shirts with long sleeve with color: flag, and size: medium, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 1828,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me women's sandals with arch support, rubber outsole, rubber sole with color: black combi, and size: 7 wide, and price lower than 70.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 1143,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me loose fit, day comfort, hand wash women's tops, tees & blouses with short sleeve, polyester spandex for teen girls with color: a3-army green, and size: xx-large, and price lower than 40.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 6033,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me quick release, hands free iphone accessories for wireless charging with color: freemount, and style: squeeze, and price lower than 70.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 839,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me loose fit women's tops, tees & blouses with short sleeve, long sleeve with color: c5-gray, and size: xx-large, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 5543,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me slim fit, machine wash men's casual button-down shirts with button closure, long sleeve with color: white, and size: small, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 6067,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me long lasting, easy care, machine washable men's pants with elastic waistband with color: green-charcoal, and size: small, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 4467,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me machine wash men's dress shirts with polyester heathers, heathers cotton, cotton heather, needle sleeve, classic fit with color: red, and fit type: men, and size: x-large, and price lower than 40.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 712,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me wash cold, machine wash men's shirts with polyester heathers, heathers cotton, cotton heather, needle sleeve, classic fit with color: cranberry, and fit type: men, and size: x-small, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 4837,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me quick drying, moisture wicking women's activewear with long sleeve with color: b-navy blue-thumbhole, and size: xx-large, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 3456,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me open toe, slip resistant women's work & safety footwear with arch support, high heel, ankle strap, memory foam with color: black, and size: 8, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 260,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me machine wash men's dress shirts with cotton spandex, classic fit, short sleeve with color: bright aqua blue, and size: 1x, and price lower than 60.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 244,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me men's loafers & slip-ons with rubber outsole, rubber sole with color: black, and size: 9.5, and price lower than 60.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 767,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me non slip, easy install ottomans with faux leather with size: 120x40x40cm, and price lower than 160.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 1791,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me officially licensed, wash cold, machine wash women's fashion hoodies & sweatshirts with classic fit with size: unisex large, and price lower than 80.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 1905,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me loose fit women's tops, tees & blouses with short sleeve, long sleeve with color: c1-pink, and size: large, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 4139,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me machine wash women's tops, tees & blouses with short sleeve, unique design, relaxed fit, button closure, polyester spandex with color: green2, and size: x-large, and price lower than 40.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 4931,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me loose fit, day comfort, hand wash women's tops, tees & blouses with short sleeve, polyester spandex for teen girls with color: a7-black, and size: x-large, and price lower than 40.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 217,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me men's t-shirts & tanks with short sleeve, fashion design, long sleeve, button closure with color: b-gray, and size: xx-large, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 4597,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me hand wash women's sweaters with long sleeve, stretch fabric, polyester spandex for teen girls, daily wear with color: xnj-tshirt342-black, and size: medium, and price lower than 30.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 1628,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me machine wash men's dress shirts with polyester heathers, heathers cotton, cotton heather, needle sleeve, classic fit with color: royal blue, and fit type: youth, and size: 3t, and price lower than 40.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 5865,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me men's shorts with elastic waist, classic fit, short sleeve for gym workout with color: navy, and size: small, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 5323,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me wash cold, machine wash women's suiting & blazers with button closure, polyester spandex, long sleeve with color: z-black&grey, and size: small, and price lower than 80.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 5745,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me loose fit women's tops, tees & blouses with short sleeve, long sleeve with color: c5-purple, and size: x-large, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 4464,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me machine wash men's dress shirts with cotton spandex, classic fit, short sleeve with color: bright aqua blue, and size: 5x-large tall, and price lower than 60.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 3436,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me home office furniture sets for dining room, living room with color: brown | beige, and item shape: runner, and size: 3 ft 7 in x 5 ft 2 in, and price lower than 70.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 1805,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me women's pumps with closed toe, rubber sole with color: leopard, and size: 5.5, and price lower than 80.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 3679,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me day comfort, anti slip, non slip women's oxfords with high heel, closed toe, ankle strap, memory foam, rubber sole with color: beige, and size: 6.5, and price lower than 70.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 4827,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me machine wash men's tuxedo shirts with polyester heathers, heathers cotton, cotton heather, needle sleeve, classic fit with color: heather grey, and fit type: women, and size: x-small, and price lower than 40.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 2278,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me non slip, easy clean dining sets for dining room with color: glod, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 6630,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me non slip desks for living room with color: cargoo5209, and size: 23.6x35.4in+23.6x70.9in, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 53,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me ready use, fully assembled, high density mattresses with box spring with size: king, and price lower than 590.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 6216,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me machine wash, moisture wicking men's t-shirts & tanks with polyester spandex, long sleeve with color: green, and size: xx-large, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 6601,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me high power, non slip binoculars & scopes for bird watching with style: 15x60 uhd binoculars, and price lower than 190.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 1307,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me machine wash women's pants with high waist, elastic closure with color: army green, and size: small, and price lower than 60.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 5719,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me machine wash men's t-shirts with long sleeve with color: black, and size: 4x-large big, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 3462,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me machine wash women's swimsuits & cover ups with tummy control, high waist with color: black, and size: small, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 2787,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me loose fit women's tops, tees & blouses with short sleeve, long sleeve with color: b1-wine, and size: x-large, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 2276,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me wash cold, machine wash men's shirts with polyester heathers, heathers cotton, cotton heather, needle sleeve, classic fit with color: brown, and fit type: men, and size: 4t, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 1273,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me hands free headphones for wireless bluetooth with color: white off white, and price lower than 70.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 1763,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me slip resistant, non slip men's loafers & slip-ons with rubber outsole, rubber sole with color: 1877black, and size: 7, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 6254,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me men's boots with lace closure, rubber outsole, rubber sole with color: black, and size: 11, and price lower than 150.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 2757,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me men's shorts with elastic waist, classic fit, short sleeve for gym workout with color: navy, and size: x-large, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 837,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me men's t-shirts & tanks with needle sleeve, classic fit with color: olive, and fit type: men, and size: 3x-large, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 759,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me men's sleep & lounge with long sleeve, elastic waistband for daily wear with color: multi 7, and size: x-large, and price lower than 80.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 3112,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me machine wash men's dress shirts with polyester heathers, heathers cotton, cotton heather, needle sleeve, classic fit with color: heather grey, and fit type: youth, and size: medium, and price lower than 40.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 792,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me butt lifting, machine washable, hand wash men's shorts with short sleeve, elastic waistband with color: green, and size: medium, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 2940,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me highly pigmented, long lasting makeup palettes for eye shadow with size: 02, and price lower than 40.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 2817,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me machine wash men's dress shirts with cotton spandex, classic fit, short sleeve with color: black, and size: medium, and price lower than 60.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 4945,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me loose fit women's tops, tees & blouses with short sleeve, long sleeve with color: a2-wine, and size: small, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 2166,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me loose fit, day comfort, hand wash women's tops, tees & blouses with short sleeve, polyester spandex for teen girls with color: a7-black, and size: small, and price lower than 40.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 6611,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me winter warm women's coats, jackets & vests with long sleeve, faux fur with color: red, and size: 3x-large, and price lower than 90.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 355,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me quick drying, moisture wicking women's activewear with long sleeve with color: c-green, and size: medium, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 5977,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me hand crafted candy & chocolate for gift set, valentine day with style: happy birthday truffle chocolate, and price lower than 60.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 3763,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me gluten free, protein serving pantry staples with flavor name: pepper jack, and size: 4.25 ounce (pack of 6), and price lower than 60.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 4392,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me machine wash men's t-shirts with long sleeve with color: mossy oak coyote, and size: xx-large big tall, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 1022,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me beds with wood frame, box spring, solid wood with color: charcoal, and size: queen, and price lower than 400.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 3100,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me machine wash men's t-shirts with long sleeve with color: mossy oak coyote, and size: medium, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 645,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me high quality hair extensions, wigs & accessories for hair loss with size: 8 inch, and price lower than 90.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 4522,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me long lasting, high quality hair loss products with color: 4 medium dark brown, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 2401,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me machine wash, moisture wicking men's t-shirts & tanks with polyester spandex, long sleeve with color: black | blue, and size: xx-large, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 6794,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me men's fashion sneakers with memory foam, rubber sole with color: black | white, and size: 11.5, and price lower than 70.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 5149,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me non slip desks for living room with color: snowmangoo0240, and size: 23.6x35.4in+23.6x70.9in, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 5066,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me plug play, easy use turntables, and price lower than 140.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 2962,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me eco friendly throw blankets with fleece throw with color: thanksgivinggoo1780, and size: 39 x 49 in, and price lower than 70.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 4729,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me machine wash men's dress shirts with cotton spandex, classic fit, short sleeve with color: bright white, and size: 4x, and price lower than 60.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 1575,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me compatible apple online game services with case cover with color: ostrich, and price lower than 40.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 5771,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me machine wash men's t-shirts with long sleeve with color: inferno, and size: 4x-large big, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 569,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me wash cold, machine wash men's shirts with polyester heathers, heathers cotton, cotton heather, needle sleeve, classic fit with color: olive, and fit type: men, and size: large, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 375,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me machine wash men's dress shirts with cotton spandex, classic fit, short sleeve with color: estate blue, and size: 6x, and price lower than 60.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 5417,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me home office furniture sets for dining room, living room with color: blue, and item shape: rectangular, and size: 7 ft 8 in, and price lower than 70.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 1866,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me machine wash men's tuxedo shirts with polyester heathers, heathers cotton, cotton heather, needle sleeve, classic fit with color: heather blue, and fit type: youth, and size: large, and price lower than 40.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 6332,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me machine washable window coverings for living room with color: sea mist, and size: 52\"w x 63\"l, and price lower than 30.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 2370,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me home office furniture sets for dining room, living room with color: taupe, and item shape: round, and size: 3 ft 7 in x 5 ft 2 in, and price lower than 70.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 653,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me wash cold, machine wash men's shirts with polyester heathers, heathers cotton, cotton heather, needle sleeve, classic fit with color: cranberry, and fit type: women, and size: medium, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 1907,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me officially licensed men's t-shirts & tanks with needle sleeve, classic fit with color: silver, and fit type: men, and size: small, and price lower than 40.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 827,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me loose fit women's tops, tees & blouses with short sleeve, long sleeve with color: d1-orange, and size: x-large, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 3113,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me loose fit women's tops, tees & blouses with short sleeve, long sleeve with color: a3-wine, and size: large, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 2277,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me machine wash men's dress shirts with cotton spandex, classic fit, short sleeve with color: charcoal heather (light), and size: 3x, and price lower than 60.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 3714,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me heavy duty china cabinets with stainless steel with size: 21.25'' x 2.12'', and price lower than 80.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 5207,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me hand wash women's sweaters with long sleeve, stretch fabric, polyester spandex for teen girls, daily wear with color: xnj-tshirt326-blue, and size: medium, and price lower than 30.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 6833,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me slip resistant, non slip men's loafers & slip-ons with rubber outsole, rubber sole with color: 1877black, and size: 11.5, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 2988,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me machine wash men's dress shirts with polyester heathers, heathers cotton, cotton heather, needle sleeve, classic fit with color: kelly green, and fit type: youth, and size: x-large, and price lower than 40.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 1332,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me loose fit women's tops, tees & blouses with short sleeve, long sleeve with color: a3-wine, and size: xx-large, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 3032,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me loose fit, day comfort, hand wash women's tops, tees & blouses with short sleeve, polyester spandex for teen girls with color: b12-a, and size: xx-large, and price lower than 40.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 2910,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me slim fit men's henleys with short sleeve with color: 152- coffee, and size: x-large, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 1716,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me anti slip men's loafers & slip-ons with rubber sole with color: 2005grey, and size: 9.5, and price lower than 60.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 5490,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me machine wash men's dress shirts with cotton spandex, classic fit, short sleeve with color: grey heather, and size: medium, and price lower than 60.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 2187,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me machine wash men's dress shirts with polyester heathers, heathers cotton, cotton heather, needle sleeve, classic fit with color: pink, and fit type: women, and size: x-large, and price lower than 40.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 5749,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me height adjustable home office chairs with stainless steel for living room with color: cute pink, and price lower than 210.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 5599,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me butt lifting, light weight women's shorts with high waist, tummy control with color: wine, and size: small, and price lower than 30.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 5308,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me eco friendly throw blankets with fleece throw with color: peacock2goo1111, and size: 49x79in, and price lower than 70.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 584,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me machine wash men's dress shirts with polyester heathers, heathers cotton, cotton heather, needle sleeve, classic fit with color: heather grey, and fit type: men, and size: small, and price lower than 40.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 4990,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me hand wash women's sweaters with long sleeve, stretch fabric, polyester spandex for teen girls, daily wear with color: xnj-tshirt337-wine, and size: xx-large, and price lower than 30.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 5201,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me slim fit, loose fit men's tuxedo shirts with long sleeve, short sleeve, contrast color, classic fit for teen girls with color: b-white, and size: 3x-large, and price lower than 40.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 1401,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me compatible apple wearable technology with stainless steel with color: silver, and size: 38mm, and price lower than 40.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 4375,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me men's t-shirts & tanks with needle sleeve, classic fit with color: brown, and fit type: women, and size: medium, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 5973,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me machine wash men's dress shirts with cotton spandex, classic fit, short sleeve with color: barolo, and size: medium, and price lower than 60.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 2005,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me machine washable men's t-shirts with short sleeve for tumble dry with color: 12 pack tank top undershirts, and size: medium, and price lower than 140.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 1338,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me loose fit women's tops, tees & blouses with short sleeve, long sleeve with color: c5-purple, and size: small, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 3786,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me men's t-shirts & tanks with short sleeve, fashion design, long sleeve, button closure with color: e-white, and size: 3x-large, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 3108,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me women's sandals with arch support, rubber outsole, rubber sole with color: taupe metallic combi, and size: 8.5 wide, and price lower than 70.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 2211,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me men's shorts with drawstring closure, elastic waist for gym workout with color: #2 army green, and size: 32, and price lower than 40.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 5242,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me straight leg, machine washable men's jeans with color: khaki, and size: 34w x 32l, and price lower than 90.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 5637,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me high resolution, easy install video surveillance for motion detection, and price lower than 120.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 4562,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me loose fit, day comfort, hand wash women's tops, tees & blouses with short sleeve, polyester spandex for teen girls with color: b17-red, and size: small, and price lower than 40.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 1799,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me machine wash men's dress shirts with cotton spandex, classic fit, short sleeve with color: melon berry, and size: xx-large, and price lower than 60.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 5608,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me machine wash men's dress shirts with polyester heathers, heathers cotton, cotton heather, needle sleeve, classic fit with color: navy, and fit type: youth, and size: 3x-large, and price lower than 40.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 2656,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me quick release, hands free iphone accessories for wireless charging with color: freemount, and style: vent, and price lower than 70.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 6904,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me slip resistant, non slip men's loafers & slip-ons with rubber outsole, rubber sole with color: 228r.brown-a, and size: 10, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 6294,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me machine wash men's tuxedo shirts with polyester heathers, heathers cotton, cotton heather, needle sleeve, classic fit with color: heather blue, and fit type: women, and size: large, and price lower than 40.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 6356,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me machine wash men's t-shirts with long sleeve with color: slate, and size: small, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 458,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me machine wash men's dress shirts with polyester heathers, heathers cotton, cotton heather, needle sleeve, classic fit with color: navy, and fit type: men, and size: small, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 1876,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me loose fit, day comfort, hand wash women's tops, tees & blouses with short sleeve, polyester spandex for teen girls with color: a3-wine red, and size: large, and price lower than 40.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 6732,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me machine wash men's dress shirts with cotton spandex, classic fit, short sleeve with color: black, and size: 4x-large tall, and price lower than 60.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 262,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me ready hang wall art with solid wood for living room with color: fashion black girl02, and size: 12x18 inch, and price lower than 60.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 6594,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me home office furniture sets for dining room, living room with color: navy | red, and item shape: runner, and size: 3 ft 7 in x 5 ft 2 in, and price lower than 70.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 2584,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me wash cold, machine wash women's suiting & blazers with button closure, polyester spandex, long sleeve with color: z-black&grey, and size: medium, and price lower than 80.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 3286,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me machine wash men's t-shirts with long sleeve with color: charcoal heather, and size: 4x-large big tall, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 2193,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me machine washable window coverings for living room with color: dark blue, and size: 42\"w x 45\"l, and price lower than 30.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 542,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me high quality bathing accessories for dry hair with color: pink purple, and size: 26 inch x 10 inch, and price lower than 30.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 1728,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me machine wash women's swimsuits & cover ups with tummy control, high waist with color: green, and size: small, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 4646,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me men's polos with relaxed fit, needle sleeve with color: military green, and size: medium, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 5881,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me wash cold, machine wash men's shirts with polyester heathers, heathers cotton, cotton heather, needle sleeve, classic fit with color: brown, and fit type: women, and size: x-large, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 2577,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me loose fit women's shorts with elastic closure, faux fur with color: red, and size: x-large, and price lower than 60.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 1741,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me loose fit women's tops, tees & blouses with short sleeve, long sleeve with color: a4-blue, and size: small, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 5369,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me gluten free, protein serving pantry staples with flavor name: pecan, and size: 4.25 ounce (pack of 2), and price lower than 60.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 4089,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me long lasting, moisture wicking, loose fit men's shorts with elastic waistband, quality materials, polyester cotton, short sleeve with color: black, and size: small, and price lower than 40.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 3241,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me slim fit men's suits & sport coats with long sleeve, short sleeve with color: 157- dark gray, and size: xx-large, and price lower than 20.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 5266,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me day comfort, anti slip, non slip women's oxfords with high heel, closed toe, ankle strap, memory foam, rubber sole with color: black, and size: 9, and price lower than 70.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 3758,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me officially licensed men's t-shirts & tanks with needle sleeve, classic fit with color: silver, and fit type: men, and size: large, and price lower than 40.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 1170,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me men's shorts with drawstring closure, elastic waist for gym workout with color: #2 dark grey, and size: 36, and price lower than 40.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 2169,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me wash cold, machine wash men's shirts with polyester heathers, heathers cotton, cotton heather, needle sleeve, classic fit with color: olive, and fit type: youth, and size: 4t, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 2020,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me gluten free, protein serving pantry staples with flavor name: sea salt, and size: 4.25 ounce (pack of 6), and price lower than 60.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 6102,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me women's pumps with closed toe, rubber sole with color: leopard, and size: 6, and price lower than 80.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 4598,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me machine wash men's dress shirts with cotton spandex, classic fit, short sleeve with color: bright cobalt, and size: xx-large, and price lower than 60.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 4415,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me anti slip men's loafers & slip-ons with rubber sole with color: 2005black, and size: 9, and price lower than 60.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 2152,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me machine wash men's pants with relaxed fit with color: navy, and size: 46w x 32l, and price lower than 60.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 6119,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me men's fashion sneakers with lace closure, rubber outsole, rubber sole with color: white | black, and size: 8.5, and price lower than 70.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 4788,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me eco friendly throw blankets with fleece throw with color: cartoon2goo8633, and size: 49x79in, and price lower than 70.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 3509,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me machine wash men's t-shirts & tanks with polyester heathers, heathers cotton, cotton heather, needle sleeve, classic fit with color: black, and fit type: women, and size: medium, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 4780,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me eco friendly throw blankets with fleece throw with color: halloweengoo6082, and size: 49x59in, and price lower than 70.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 3271,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me hand wash, machine wash women's dresses with quality polyester, long sleeve with color: khaki, and size: small, and price lower than 60.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 2965,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me men's polos with relaxed fit, needle sleeve with color: military green, and size: x-large, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 1796,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me wash cold, machine wash men's shirts with polyester heathers, heathers cotton, cotton heather, needle sleeve, classic fit with color: purple, and fit type: women, and size: 2t, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 1133,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me machine wash women's tops, tees & blouses with short sleeve, unique design, relaxed fit, button closure, polyester spandex with color: tie dye, and size: 3x-large, and price lower than 40.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 4174,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me slim fit, loose fit men's tuxedo shirts with long sleeve, short sleeve, contrast color, classic fit for teen girls with color: a-bk3, and size: x-large, and price lower than 40.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 4042,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me machine washable window coverings for living room with color: dove grey, and size: 52\"w x 72\"l, and price lower than 30.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 744,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me machine wash men's dress shirts with polyester heathers, heathers cotton, cotton heather, needle sleeve, classic fit with color: red, and fit type: men, and size: 4t, and price lower than 40.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 6191,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me men's shorts with comfortable fit, elastic waistband for gym workout, daily wear with color: black 1, and size: medium, and price lower than 40.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 385,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me loose fit, day comfort, hand wash women's tops, tees & blouses with short sleeve, polyester spandex for teen girls with color: a4-gray, and size: large, and price lower than 40.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 898,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me men's boots with lace closure, rubber outsole, rubber sole with color: black, and size: 9, and price lower than 150.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 1252,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me home office furniture sets for dining room, living room with color: black-gray, and item shape: round, and size: 7 ft 8 in x 10 ft 7 in, and price lower than 70.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 5140,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me machine wash men's t-shirts with long sleeve with color: fish, and size: 4x-large big tall, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 1310,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me machine wash, wash cold women's fashion hoodies & sweatshirts for dry clean, tumble dry with color: red, and size: xx-large, and price lower than 70.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 6488,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me day comfort, anti slip, non slip women's oxfords with high heel, closed toe, ankle strap, memory foam, rubber sole with color: navy, and size: 9.5, and price lower than 70.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 5574,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me machine wash men's dress shirts with cotton spandex, classic fit, short sleeve with color: true black, and size: 5x, and price lower than 60.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 3458,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me wash cold, machine wash men's shirts with polyester heathers, heathers cotton, cotton heather, needle sleeve, classic fit with color: asphalt, and fit type: men, and size: 3x-large, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 4885,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me wash cold, machine wash women's suiting & blazers with button closure, polyester spandex, long sleeve with color: z-dark khaki, and size: x-small, and price lower than 80.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 520,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me beds with wood frame, box spring, solid wood with color: blue, and size: full, and price lower than 400.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 3152,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me loose fit women's tops, tees & blouses with short sleeve, long sleeve with color: c1-blue, and size: small, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 3126,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me machine wash men's t-shirts with long sleeve with color: big game field camo, and size: 5x-large big, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 4881,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me slim fit, loose fit men's tuxedo shirts with long sleeve, short sleeve, contrast color, classic fit for teen girls with color: a-bk1, and size: medium, and price lower than 40.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 3834,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me long lasting, moisture wicking men's boots for daily wear with size: 8, and price lower than 120.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 4334,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me officially licensed, machine wash men's t-shirts with polyester heathers, heathers cotton, cotton heather, needle sleeve, classic fit with color: white, and fit type: youth, and size: small, and price lower than 40.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 2059,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me slip resistant, non slip men's loafers & slip-ons with rubber outsole, rubber sole with color: r.brown2060, and size: 9.5, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 4532,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me gluten free, protein serving pantry staples with flavor name: sesame seeds, and size: 4.25 ounce (pack of 6), and price lower than 60.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 94,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me women's lingerie, sleep & lounge with long sleeve, tummy control, high waist, short sleeve with color: khaki, and size: xx-large, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 5572,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me machine wash men's dress shirts with polyester heathers, heathers cotton, cotton heather, needle sleeve, classic fit with color: pink, and fit type: youth, and size: xx-large, and price lower than 40.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 5904,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me machine washable window coverings for living room with color: dusty blush, and size: 42\"w x 54\"l, and price lower than 30.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 938,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me tongue cleaners for oral hygiene, fresh breath with color: blue, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 5584,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me wash cold, machine wash men's shirts with polyester heathers, heathers cotton, cotton heather, needle sleeve, classic fit with color: cranberry, and fit type: youth, and size: large, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 4398,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me machine wash men's pants with relaxed fit with color: bottle green, and size: 46w x 32l, and price lower than 60.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 6151,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me super soft decorative pillows for living room with color: teal blue, and size: 18''x18'', and price lower than 40.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 2185,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me machine washable, hand wash, machine wash women's pants with tummy control, high waist for daily wear with size: small, and price lower than 40.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 6296,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me home office furniture sets for dining room, living room with color: navy | red, and item shape: runner, and size: 5 ft 3 in x 7 ft 5 in, and price lower than 70.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 5250,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me beds with wood frame, box spring, solid wood with color: natural, and size: full, and price lower than 400.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 2786,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me open toe, slip resistant women's work & safety footwear with arch support, high heel, ankle strap, memory foam with color: black, and size: 9, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 913,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me machine wash men's dress shirts with polyester heathers, heathers cotton, cotton heather, needle sleeve, classic fit with color: dark heather, and fit type: women, and size: x-large, and price lower than 40.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 2404,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me quick release, hands free iphone accessories for wireless charging with color: freemount, and style: dash, and price lower than 70.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 3561,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me quick release, hands free iphone accessories for wireless charging with color: windshield kit, and style: windshield, and price lower than 70.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 1295,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me slim fit, straight leg men's pants with elastic waist, long sleeve, relaxed fit for everyday wear with color: green, and size: large, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 3716,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me men's t-shirts & tanks with needle sleeve, classic fit with color: olive, and fit type: women, and size: medium, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 26,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me machine wash men's tuxedo shirts with polyester heathers, heathers cotton, cotton heather, needle sleeve, classic fit with color: heather grey, and fit type: women, and size: 2t, and price lower than 40.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 5915,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me machine washable men's t-shirts with short sleeve for tumble dry with color: 9 pack pocket tee slub, and size: 4x-large, and price lower than 140.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 5895,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me gluten free, protein serving pantry staples with flavor name: honey cinnamon, and size: 4.25 ounce (pack of 12), and price lower than 60.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 2157,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me beds with wood frame, box spring, solid wood with color: teal, and size: twin, and price lower than 400.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 4100,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me men's t-shirts & tanks with short sleeve, fashion design, long sleeve, button closure with color: e-white, and size: xx-large, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 6241,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me machine washable window coverings for living room with color: ivory, and size: 52\"w x 72\"l, and price lower than 30.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 1463,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me wash cold, machine wash men's shirts with polyester heathers, heathers cotton, cotton heather, needle sleeve, classic fit with color: royal blue, and fit type: youth, and size: 3t, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 4158,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me machine wash men's dress shirts with cotton spandex, classic fit, short sleeve with color: cradle pink, and size: 4x, and price lower than 60.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 871,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me slim fit, machine wash women's jumpsuits, rompers & overalls with short sleeve, high waist, polyester spandex for daily wear with color: floral yellow, and size: small, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 5122,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me wall mounted, space saving, assembly required hall trees for living room, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 2444,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me loose fit women's tops, tees & blouses with short sleeve, long sleeve with color: c5-purple, and size: large, and price lower than 50.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    },
+    {
+        "id": 6894,
+        "messages": [
+            {
+                "role": "system",
+                "content": "WebShop [SEP] Instruction: [SEP] Find me women's pumps with closed toe, rubber sole with color: leopard, and size: 8, and price lower than 80.00 dollars [SEP] Search\n\nYour admissible actions of the current situation are: \n[\n'search[<your query>]',\n'click[search]',\n]."
+            }
+        ]
+    }
+]

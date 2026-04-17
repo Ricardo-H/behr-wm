@@ -8,9 +8,8 @@ dist/
 build/
 
 # Virtual environments
-uv_webshop/
-venv/
 .venv/
+venv/
 
 # IDE
 .vscode/

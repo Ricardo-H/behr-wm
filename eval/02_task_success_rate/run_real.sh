@@ -15,7 +15,7 @@ set -x
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 PROJECT_ROOT="$( cd "$SCRIPT_DIR/../.." && pwd )"
 
-# source "$PROJECT_ROOT/uv_webshop/bin/activate"
+# source "$PROJECT_ROOT/.venv/bin/activate"
 
 # === Configuration ===
 TASK="webshop"
@@ -63,8 +63,8 @@ echo "=========================================="
 ENV_PORT=$((30000 + RANDOM % (99999-30000+1)))
 
 # Activate WebShop environment
-if [ -f "$PROJECT_ROOT/uv_webshop/bin/activate" ]; then
-    source "$PROJECT_ROOT/uv_webshop/bin/activate"
+if [ -f "$PROJECT_ROOT/.venv/bin/activate" ]; then
+    source "$PROJECT_ROOT/.venv/bin/activate"
 fi
 
 webshop --host 0.0.0.0 --port $ENV_PORT >/tmp/webshop_server_${ENV_PORT}.log 2>&1 &

@@ -10,21 +10,22 @@
 # =============================================================================
 
 set -e
-source uv_webshop/bin/activate
 
-# Get script directory
+# Resolve script location and project root before any activation attempt.
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 PROJECT_ROOT="$( cd "$SCRIPT_DIR/../.." && pwd )"
 
 # Port configuration
 PORT="${1:-$((30000 + RANDOM % (99999-30000+1)))}"
 
-# Activate WebShop environment
-if [ -f "$PROJECT_ROOT/uv_webshop/bin/activate" ]; then
-    source "$PROJECT_ROOT/uv_webshop/bin/activate"
+# Activate the project's virtual environment.
+if [ -f "$PROJECT_ROOT/.venv/bin/activate" ]; then
+    # shellcheck disable=SC1091
+    source "$PROJECT_ROOT/.venv/bin/activate"
 else
-    echo "Warning: uv_webshop environment not found."
-    echo "Please run: bash scripts/env_setup/uv_webshop.sh"
+    echo "Warning: .venv environment not found."
+    echo "Please run: bash scripts/env_setup/install_env.sh"
+    exit 1
 fi
 
 echo "=========================================="

@@ -79,32 +79,40 @@ behr-wm/
 │   ├── 01_single_step_accuracy/   # Metric 1: Exact Match
 │   ├── 02_task_success_rate/      # Metric 2: SR_WM / SR_W2R / SR_Real / CR / CR_pw
 │   └── 03_behavior_consistency/   # Metric 3: step-level BehR score
+├── train/
+│   └── run_grpo_4gpu.sh     # Minimal GRPO launcher (4 × A100 default)
 ├── scripts/
-│   ├── env_setup/           # uv / verl environment bootstrap
+│   ├── env_setup/           # install_env.sh (base env + AgentGym), install_verl.sh
 │   ├── servers/             # vLLM & WebShop server launchers
-│   └── download_data.py     # Fetch init contexts from HuggingFace (TBA)
+│   └── download_data.py     # Fetch train-split init contexts from HF (coming soon)
 ├── configs/                 # Eval and training config templates
-├── data/                    # Init contexts (via download_data.py)
+├── data/
+│   └── init_contexts/       # Shipped test splits (WebShop + TextWorld)
 ├── docs/                    # INSTALL / EVALUATION / TRAINING
-└── assets/                  # Figures used in README / docs
+├── assets/                  # Figures used in README / docs
+├── compute_cr.py            # Batch CR / CR_pw aggregator
+└── AgentGym/                # Cloned automatically by install_env.sh (gitignored)
 ```
 
 ## Quick Start — Evaluation
 
 ### 1. Install
 
-Requirements: Linux, Python 3.10+, CUDA 12.x, ≥ 1× A100-80GB (evaluation) or
-≥ 4× A100-80GB (training).
+Requirements: Linux, Python 3.10, CUDA 12.6 (or compatible), ≥ 1× A100-80GB for
+evaluation (≥ 4× A100-80GB recommended for training).
 
 ```bash
 git clone https://github.com/Ricardo-H/behr-wm.git
 cd behr-wm
 
-bash scripts/env_setup/uv_webshop.sh   # vLLM + WebShop environment
-source uv_webshop/bin/activate
-
-python scripts/download_data.py         # fetch init_contexts (TBA: HF repo)
+# One-shot environment installer: creates .venv, installs PyTorch + vLLM +
+# Flash Attention, clones AgentGym, installs the WebShop backend.
+bash scripts/env_setup/install_env.sh
+source .venv/bin/activate
 ```
+
+The test-split init contexts needed for evaluation are already bundled in
+`data/init_contexts/` — no extra download is required.
 
 See [docs/INSTALL.md](docs/INSTALL.md) for troubleshooting.
 

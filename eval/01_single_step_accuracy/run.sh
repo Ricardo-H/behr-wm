@@ -6,7 +6,7 @@ echo "Task: $TASK"
 echo "Model: $MODEL"
 echo "Output Root: $OUTPUT_ROOT"
 
-source uv_webshop/bin/activate
+source .venv/bin/activate
 
 if [[ $TASK == "alfworld" ]]; then
     DATA="data/llama_factory/alfworld_test_with_env_195.json"

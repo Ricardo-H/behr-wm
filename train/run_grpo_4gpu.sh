@@ -19,8 +19,8 @@ SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 PROJECT_ROOT="$( cd "$SCRIPT_DIR/.." && pwd )"
 
 # Activate environment if present
-if [ -f "$PROJECT_ROOT/uv_webshop/bin/activate" ]; then
-    source "$PROJECT_ROOT/uv_webshop/bin/activate"
+if [ -f "$PROJECT_ROOT/.venv/bin/activate" ]; then
+    source "$PROJECT_ROOT/.venv/bin/activate"
 fi
 
 # ---- Required: data paths ----

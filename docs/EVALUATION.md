@@ -25,18 +25,21 @@ BehR-WM provides a comprehensive evaluation framework with three categories of m
 ### 1. Start Servers
 
 ```bash
-# World Model server
-bash scripts/servers/start_wm_server.sh -m <your_model> -p 8001 -gpu 0
+source .venv/bin/activate
 
-# Reference Agent server (for Metric 3)
+# World Model under test (vLLM)
+bash scripts/servers/start_wm_server.sh -m <your_wm_model> -p 8001 -gpu 0
+
+# WebShop backend (picks a random port 30000–99999 if none given)
+bash scripts/servers/start_webshop_env.sh 36001
+
+# Reference Agent server (used by Metric 3 and by training)
 bash scripts/servers/start_reference_agent_server.sh -m Qwen/Qwen3-8B -p 8000 -gpu 1
 ```
 
 ### 2. Run Evaluations
 
 ```bash
-source uv_webshop/bin/activate
-
 # Metric 1: Single-step Accuracy
 bash eval/01_single_step_accuracy/run.sh webshop <model_name> outputs/
 
@@ -52,13 +55,15 @@ bash eval/02_task_success_rate/run_real.sh
 # Metric 2.4–2.5: CR and CR_pw
 python eval/02_task_success_rate/analyze_pairwise_cr.py \
     --real-dir outputs/task_success_rate/real/webshop/<experiment> \
-    --w2r-dir outputs/task_success_rate/w2r/webshop/<experiment>
+    --w2r-dir  outputs/task_success_rate/w2r/webshop/<experiment>
 
-# (alternative aggregate helper across many experiments)
-python compute_cr.py --results-dir outputs/task_success_rate/
+# (alternative aggregator across multiple experiments)
+python compute_cr.py \
+    --real-dir outputs/task_success_rate/real/webshop/<baseline> \
+    --entries  "ours=outputs/task_success_rate/wm/webshop/<experiment>:wm2real"
 
 # Metric 3: Behavior Consistency
-bash eval/03_behavior_consistency/run_eval_bf.sh
+bash eval/03_behavior_consistency/run_eval_bf.sh <path_to_test.json>
 ```
 
 ## TextWorld

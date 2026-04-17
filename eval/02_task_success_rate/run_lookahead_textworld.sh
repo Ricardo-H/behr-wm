@@ -22,7 +22,7 @@ PROJECT_ROOT="$( cd "$SCRIPT_DIR/../.." && pwd )"
 cd "$PROJECT_ROOT"
 
 # Activate environment
-source "$PROJECT_ROOT/uv_webshop/bin/activate"
+source "$PROJECT_ROOT/.venv/bin/activate"
 
 # === Configuration ===
 AGENT_MODEL_NAME="Qwen/Qwen3-8B"

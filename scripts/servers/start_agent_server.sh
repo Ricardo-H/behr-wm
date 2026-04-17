@@ -78,7 +78,7 @@ if [ -z "$MODEL" ]; then
     exit 1
 fi
 
-source uv_webshop/bin/activate
+source .venv/bin/activate
 
 # GPU configuration
 if [ -z "$GPUS" ]; then

@@ -95,7 +95,7 @@ fi
 # Activate virtual environment
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 PROJECT_ROOT="$( cd "${SCRIPT_DIR}/../.." && pwd )"
-source "${PROJECT_ROOT}/uv_webshop/bin/activate"
+source "${PROJECT_ROOT}/.venv/bin/activate"
 
 # GPU configuration
 if [ -z "$GPUS" ]; then

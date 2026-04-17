@@ -5,7 +5,7 @@
 #
 # Usage:
 #   bash start_wm_server.sh -m <model> [-p <port>] [-gpu <gpus>] [-l <max_len>]
-#   bash scripts/servers/start_wm_server.sh -m anonymous/BehR-WM-WebShop-Qwen2.5-7B -p 8001 -gpu 2,3
+#   bash scripts/servers/start_wm_server.sh -m X1AOX1A/WorldModel-Webshop-Qwen2.5-7B -p 8001 -gpu 2,3
 # =============================================================================
 
 set -e
@@ -70,7 +70,7 @@ if [ -z "$MODEL" ]; then
     exit 1
 fi
 
-source uv_webshop/bin/activate
+source .venv/bin/activate
 
 # GPU configuration
 if [ -z "$GPUS" ]; then

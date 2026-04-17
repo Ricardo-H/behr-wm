@@ -11,7 +11,7 @@ set -e
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 PROJECT_ROOT="$( cd "$SCRIPT_DIR/../.." && pwd )"
 cd "$PROJECT_ROOT"
-source "$PROJECT_ROOT/uv_webshop/bin/activate"
+source "$PROJECT_ROOT/.venv/bin/activate"
 
 # Config
 AGENT_PORT=8010  # Qwen3-8B

@@ -4,7 +4,7 @@
 # Tested with Python 3.10 and CUDA 12.4.
 #
 # Quick install (evaluation environment):
-#     bash scripts/env_setup/uv_webshop.sh
+#     bash scripts/env_setup/install_env.sh
 #
 # Additional step for GRPO training:
 #     bash scripts/env_setup/install_verl.sh
@@ -64,5 +64,5 @@ uvicorn>=0.30.0
 #        bash scripts/env_setup/install_verl.sh
 #
 # 5. Install the WebShop environment:
-#        bash scripts/env_setup/uv_webshop.sh
+#        bash scripts/env_setup/install_env.sh
 # =============================================================================

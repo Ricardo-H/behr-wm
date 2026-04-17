@@ -49,25 +49,10 @@ def parse_think_tags(content: str) -> Tuple[str, Optional[str]]:
     
     return content, None
 
-# Add project root to path for cloudgpt import (lazy loaded)
-# interact_with_wm.py is at: fe-world/eval/02_task_success_rate/interact_with_wm.py
-# So we need 3 levels up to get to fe-world/
+# Add project root to sys.path so local package imports resolve when the
+# script is run directly.
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 sys.path.insert(0, PROJECT_ROOT)
-
-# Global CloudGPT client - initialized once and reused across all threads
-_cloudgpt_client = None
-
-def get_global_cloudgpt_client():
-    """Get or create global CloudGPT client (thread-safe via lru_cache in cloudgpt_aoai)"""
-    global _cloudgpt_client
-    if _cloudgpt_client is None:
-        # Lazy import: only load cloudgpt_aoai (which requires azure-identity-broker) when actually needed
-        from clodgpt.cloudgpt_aoai import get_openai_client as get_cloudgpt_client
-        print("Initializing global CloudGPT client...")
-        _cloudgpt_client = get_cloudgpt_client()
-        print("CloudGPT client initialized successfully!")
-    return _cloudgpt_client
 
 
 def write_json(dict_objs, file_name):
@@ -136,17 +121,8 @@ class ReactAgent:
         self.temperature = temperature
         # Detect if using local vLLM (api_key=EMPTY) vs remote third-party API
         self.is_local_vllm = api_key.lower() in ("empty", "local", "vllm")
-        # Initialize client once in __init__ instead of every llm_generate call
-        if "cloudgpt" in self.api_key:
-            # Use global CloudGPT client (thread-safe)
-            self.client = get_global_cloudgpt_client()
-            self.model_name = self.agent_model_name
-        elif "azure" in self.api_key:
-            from azure_openai import get_client as get_azure_client
-            self.client, self.model_name = get_azure_client(model_name=self.agent_model_name)
-        else:
-            self.client = OpenAI(api_key=self.api_key, base_url=self.api_base_url)
-            self.model_name = self.agent_model_name
+        self.client = OpenAI(api_key=self.api_key, base_url=self.api_base_url)
+        self.model_name = self.agent_model_name
 
     def llm_generate(self, messages):
         # Strip reasoning_content from history messages to avoid context explosion
@@ -155,19 +131,19 @@ class ReactAgent:
         
         # Client is already initialized in __init__
         if "gpt" in self.model_name or "claude" in self.model_name:
-            # Dynamic max_tokens: cap to avoid exceeding Azure/CloudGPT context window
-            # Azure GPT-4o context = 32768 (S0 tier); estimate input tokens ~= 4 chars/token
+            # Remote OpenAI-compatible model (e.g. gpt-4o, gpt-5, claude-*).
+            # Conservatively cap max_tokens based on input length and model context.
             estimated_input_tokens = sum(len(m.get("content", "")) for m in clean_messages) // 4
-            gpt_context_limit = 32768  # Azure S0 GPT-4o context limit
+            gpt_context_limit = 32768
             dynamic_max_tokens = max(256, min(4096, gpt_context_limit - estimated_input_tokens - 100))
-            # GPT-5 requires max_completion_tokens instead of max_tokens
+            # GPT-5 uses max_completion_tokens instead of max_tokens.
             token_key = "max_completion_tokens" if "gpt-5" in self.model_name else "max_tokens"
             api_kwargs = dict(
                 messages=clean_messages,
                 model=self.model_name,
             )
             api_kwargs[token_key] = dynamic_max_tokens
-            # GPT-5 does not support temperature != 1; omit if unsupported
+            # GPT-5 does not support temperature != 1.
             if "gpt-5" not in self.model_name:
                 api_kwargs["temperature"] = self.temperature
             response = self.client.chat.completions.create(**api_kwargs)
@@ -488,11 +464,6 @@ def main():
     api_base_url = args.api_base_url
     agent_temperature = args.temperature
     agent_max_model_len = args.agent_max_model_len
-
-    # Pre-initialize CloudGPT client before starting concurrent workers
-    if "cloudgpt" in api_key:
-        print("Pre-initializing CloudGPT client for concurrent requests...")
-        get_global_cloudgpt_client()
 
     agent_instruct_data = read_json(agent_instruct_file)
     wm_instruct_data = read_json(wm_instruct_file)

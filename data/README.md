@@ -12,25 +12,39 @@ BehR-WM draws on two text-based interactive environments:
 Evaluation uses **200 standardized test tasks** per environment, taken from
 [AgentGym](https://github.com/WooooDyy/AgentGym).
 
-## How to obtain the init contexts
+## What ships in this repository
 
-The evaluation and training pipelines read per-environment system prompts
-(agent + world model, train/test splits) from `data/init_contexts/`. Rather
-than vendoring the JSON into this repo, we fetch them from HuggingFace Hub:
+The test splits required to run the full 3-stage evaluation pipeline are
+already bundled in `init_contexts/`:
 
-```bash
-python scripts/download_data.py                 # default: all envs, all splits
-python scripts/download_data.py --env webshop   # only WebShop
-python scripts/download_data.py --env textworld --split test
+```
+data/init_contexts/
+├── webshop/
+│   ├── agent_instruct_test.json        (~265 KB)
+│   └── wm_instruct_test.json           (~95 KB)
+└── textworld/
+    ├── agent_instruct_test.json        (~695 KB)
+    └── wm_instruct_test.json           (~545 KB)
 ```
 
-> **Status:** the HuggingFace repository ID is reserved and will be published
-> together with the datasets and trained checkpoints (coming soon — see the
-> [Release Timeline](../README.md#release-timeline)). Until then
-> `download_data.py` prints the upcoming repo ID and exits. If you need the
-> init contexts today, request them by opening a GitHub issue.
+No extra download is needed to reproduce the evaluation numbers reported in
+the paper.
 
-After a successful download the directory layout is:
+## What comes later (via `scripts/download_data.py`)
+
+- **Training-split init contexts** — the `*_train.json` counterparts, used to
+  reproduce the GRPO training runs. Considerably larger (~20 MB total) and
+  therefore kept out of this git repository.
+- **Trained world-model checkpoints** — published separately on HuggingFace.
+
+Both are coming soon on HuggingFace Hub (see the
+[Release Timeline](../README.md#release-timeline) in the top-level README).
+Until then `scripts/download_data.py` prints an informative message and exits
+non-zero. If you need the training split today, please open a GitHub issue.
+
+## Re-producing the data layout
+
+If you download the training split later, the full layout becomes:
 
 ```
 data/init_contexts/
@@ -46,16 +60,6 @@ data/init_contexts/
     └── wm_instruct_test.json
 ```
 
-## Training data
-
-Full training trajectories (parquet, GRPO-ready) will ship under the same
-HuggingFace repository (coming soon). They follow the schema expected by
-[`src/data/prepare_data.py`](../src/data/prepare_data.py) and can be consumed
-directly by the reference verl invocation in
+which matches the structure expected by [`src/data/prepare_data.py`](../src/data/prepare_data.py)
+and the reference verl training command in
 [`docs/TRAINING.md`](../docs/TRAINING.md).
-
-## Model checkpoints
-
-Trained world-model checkpoints will be published on HuggingFace (coming soon).
-Each checkpoint card will document the base world model, training data slice,
-and the reported CR / CR<sub>pw</sub> / EM numbers.
